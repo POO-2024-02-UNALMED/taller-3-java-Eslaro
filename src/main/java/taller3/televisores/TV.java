@@ -26,7 +26,7 @@ public class TV {
 		return canal;
 	}
 	public void setCanal(int ncanal){
-		if(ncanal >= 1 && ncanal <= 120) {
+		if((ncanal >= 1 && ncanal <= 120) && estado == true) {
 		canal = ncanal;
 		}
 	}
@@ -40,7 +40,7 @@ public class TV {
 		return volumen;
 	}
 	public void setVolumen(int nvol) {
-		if(nvol >= 0 && nvol <= 7) {
+		if((nvol >= 0 && nvol <= 7) && estado == true) {
 		volumen = nvol;
 		}
 	}
