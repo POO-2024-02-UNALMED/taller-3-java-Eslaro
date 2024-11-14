@@ -46,10 +46,10 @@ public class TV {
 	public Control getControl() {
 		return control;
 	}
-	public void setNumTV(int nuevnum) {
+	public static void setNumTV(int nuevnum) {
 		numTV = nuevnum;
 	}
-	public int getNumTV() {
+	public static int getNumTV() {
 		return numTV;
 	}
 	public void turnOn(){
