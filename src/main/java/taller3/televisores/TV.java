@@ -46,10 +46,10 @@ public class TV {
 	public Control getControl() {
 		return control;
 	}
-	public void setnumTV(int nuevnum) {
+	public void setNumTV(int nuevnum) {
 		numTV = nuevnum;
 	}
-	public int getnumTV() {
+	public int getNumTV() {
 		return numTV;
 	}
 	public void turnOn(){
@@ -94,3 +94,4 @@ public class TV {
 		}
 	}
 }
+// Sergio Morales

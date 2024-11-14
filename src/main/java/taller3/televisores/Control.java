@@ -30,10 +30,11 @@ public class Control {
 		tv = tele;
 		tv.setControl(this);
 	}
-	public TV getTV() {
+	public TV getTv() {
 		return tv;
 	}
-	public void setTV(TV tele) {
+	public void setTv(TV tele) {
 		tv = tele;
 	}
 }
+// Sergio Morales
