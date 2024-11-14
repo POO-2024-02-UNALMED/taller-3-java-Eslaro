@@ -26,7 +26,9 @@ public class TV {
 		return canal;
 	}
 	public void setCanal(int ncanal) {
+		if(ncanal >=1 && ncanal <= 120) {
 		canal = ncanal;
+		}
 	}
 	public int getPrecio() {
 		return precio;
@@ -38,7 +40,9 @@ public class TV {
 		return volumen;
 	}
 	public void setVolumen(int nvol) {
+		if(nvol <= 7 && nvol >= 0 ) {
 		volumen = nvol;
+		}
 	}
 	public void setControl(Control ncontrol) {
 		control = ncontrol;
