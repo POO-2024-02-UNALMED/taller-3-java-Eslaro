@@ -25,8 +25,8 @@ public class TV {
 	public int getCanal() {
 		return canal;
 	}
-	public void setCanal(int ncanal) {
-		if(ncanal >=1 && ncanal <= 120) {
+	public void setCanal(int ncanal){
+		if(ncanal >= 1 && ncanal <= 120) {
 		canal = ncanal;
 		}
 	}
@@ -36,11 +36,11 @@ public class TV {
 	public void setPrecio(int nprecio) {
 		precio = nprecio;
 	}
-	public int getVolumen() {
+	public int getVolumen() { 
 		return volumen;
 	}
 	public void setVolumen(int nvol) {
-		if(nvol <= 7 && nvol >= 0 ) {
+		if(nvol >= 0 && nvol <= 7) {
 		volumen = nvol;
 		}
 	}
@@ -65,13 +65,9 @@ public class TV {
 	public boolean getEstado() {
 		return estado;
 	}
-	public boolean canalUp() {
-		if ((canal <120) && estado == true) {
+	public void canalUp() {
+		if ((canal >= 1 && canal <120) && estado == true) {
 		canal++;
-		return true;
-		}
-		else {
-			return false;
 		}
 	}
 	public boolean canalDown() {
@@ -83,22 +79,14 @@ public class TV {
 			return false;
 		}
 	}
-	public boolean volumenUp() {
+	public void volumenUp() {
 		if ((volumen <7) && estado == true) {
 		volumen++;
-		return true;
-		}
-		else {
-			return false;
 		}
 	}
-	public boolean volumenDown() {
-		if ((volumen > 0) && estado == true) {
+	public void volumenDown() {
+		if ((volumen > 0 && volumen <=7) && estado == true) {
 		volumen--;
-		return true;
-		}
-		else{
-			return false;
 		}
 	}
 }
